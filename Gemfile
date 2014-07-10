@@ -24,6 +24,11 @@ group :development do
   gem 'spring' #for preloading ur app to speed up development
 end
 
+# development and test gems
+group :development, :test do
+  gem 'ffaker'
+end
+
 group :doc do
   gem 'sdoc', '~> 0.4.0',          group: :doc
 end
